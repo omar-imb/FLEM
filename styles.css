@@ -390,3 +390,41 @@ text-align:center;
 color:#777;
 
 }
+
+/* SOCIAL ICONS */
+
+.social-icons{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+margin-top:20px;
+
+}
+
+
+
+.social-icons img{
+
+width:30px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+
+
+/* HOVER PROFESIONAL */
+
+.social-icons img:hover{
+
+opacity:0.5;
+
+transform:scale(1.1);
+
+}
