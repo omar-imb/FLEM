@@ -4,7 +4,6 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>FLEM STUDIO</title>
@@ -20,32 +19,36 @@
 
 <div class="nav-container">
 
-<div class="hamburger" id="hamburger">
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-<span></span>
-<span></span>
-<span></span>
-
-</div>
+    <div class="language-switch">
+        <button onclick="setLanguage('es')">ES</button>
+        <button onclick="setLanguage('en')">EN</button>
+    </div>
 
 </div>
 
 
 <nav class="nav-menu" id="navMenu">
 
-<a href="#proyectos">Proyectos</a>
+<a href="#proyectos" data-lang="proyectos">Proyectos</a>
 
-<a href="#servicios">Servicios</a>
+<a href="#servicios" data-lang="servicios">Servicios</a>
 
-<a href="#nosotros">Nosotros</a>
+<a href="#nosotros" data-lang="nosotros">Nosotros</a>
 
-<a href="#contacto">Contacto</a>
+<a href="#contacto" data-lang="contacto">Contacto</a>
 
 </nav>
 
 <div class="overlay" id="overlay"></div>
 
 </header>
+
 
 <!-- HERO -->
 
@@ -55,12 +58,10 @@
 
 <h1>FLEM STUDIO</h1>
 
-<p>Animación Digital</p>
+<p data-lang="animacion">Animación Digital</p>
 
-<a href="#contacto" class="boton">
-
+<a href="#contacto" class="boton" data-lang="contactar">
 Contactar
-
 </a>
 
 </section>
@@ -71,18 +72,25 @@ Contactar
 
 <section class="section">
 
-<h2>Demo Reel</h2>
+<h2 data-lang="demo">Demo Reel</h2>
 
-<div class="video">
+<div class="video-container">
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iuNftJFmmrA?si=nTJgSnVNt0ssWQ9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe
+src="https://www.youtube.com/embed/iuNftJFmmrA"
+allowfullscreen>
+</iframe>
 
 </div>
 
 </section>
 
+
+
 <section class="section" id="proyectos">
-<h2>Proyectos</h2>
+
+<h2 data-lang="proyectos">Proyectos</h2>
+
 <div class="portfolio">
 
 <img src="https://via.placeholder.com/400x250">
@@ -92,52 +100,69 @@ Contactar
 <img src="https://via.placeholder.com/400x250">
 
 </div>
+
 </section>
+
+
 
 <section class="section" id="servicios">
-<h2>Servicios</h2>
+
+<h2 data-lang="servicios">Servicios</h2>
+
 </section>
+
+
 
 <section class="section" id="nosotros">
-<h2>Nosotros</h2>
+
+<h2 data-lang="nosotros">Nosotros</h2>
+
 </section>
+
+
 
 <section class="section" id="contacto">
-    <h2>Contacto</h2>
-    <p>
-    contacto@flemstudio.com
-    </p>
 
-    <div class="social-icons">
+<h2 data-lang="contacto">Contacto</h2>
 
-    <a href="https://www.instagram.com/flem.studio" target="_blank">
-    <img src="images/instagram.svg" alt="Instagram">
-    </a>
+<p>
+contacto@flemstudio.com
+</p>
 
-    <a href="https://www.tiktok.com/@flem.studio" target="_blank">
-    <img src="images/tiktok.svg" alt="TikTok">
-    </a>
 
-    <a href="https://www.youtube.com/@flem.animation" target="_blank">
-    <img src="images/youtube.svg" alt="YouTube">
-    </a>
+<div class="social-icons">
 
-    </div>
+<a href="https://www.instagram.com/flem.studio" target="_blank">
+<img src="images/instagram.svg">
+</a>
+
+
+<a href="https://www.tiktok.com/@flem.studio" target="_blank">
+<img src="images/tiktok.svg">
+</a>
+
+
+<a href="https://www.youtube.com/@flem.animation" target="_blank">
+<img src="images/youtube.svg">
+</a>
+
+
+</div>
+
 </section>
 
 
-
-<!-- FOOTER -->
 
 <footer>
 
-<p>
+<p data-lang="footer">
 
 © 2026 FLEM STUDIO
 
 </p>
 
 </footer>
+
 
 <script src="script.js"></script>
 
